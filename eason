@@ -1,0 +1,30 @@
+
+[1mFrom:[0m /home/leothebeagle/apples-and-holidays-v-000/lib/holiday.rb @ line 40 Object#all_supplies_in_holidays:
+
+    [1;34m28[0m: [32mdef[0m [1;34mall_supplies_in_holidays[0m(holiday_hash)
+    [1;34m29[0m:   holiday_hash.each [32mdo[0m |season, season_holiday_hash|
+    [1;34m30[0m:     capitalized_season = season.to_s.capitalize!
+    [1;34m31[0m:     puts [31m[1;31m"[0m[31m#{capitalized_season}[0m[31m:[1;31m"[0m[31m[0m
+    [1;34m32[0m: 
+    [1;34m33[0m:     season_holiday_hash.each [32mdo[0m |holiday_name, supplies|
+    [1;34m34[0m:       holiday_name_string = holiday_name.to_s
+    [1;34m35[0m:       holiday_name_array = holiday_name_string.split
+    [1;34m36[0m:       holiday_name_array.collect [32mdo[0m |word|
+    [1;34m37[0m:         word.capitalize!
+    [1;34m38[0m:       [32mend[0m
+    [1;34m39[0m:       capitalized_holiday_name = holiday_name_array.join
+ => [1;34m40[0m:       binding.pry
+    [1;34m41[0m: 
+    [1;34m42[0m:     [32mend[0m
+    [1;34m43[0m:   [32mend[0m
+    [1;34m44[0m: 
+    [1;34m45[0m:   [1;34m# iterate through holiday_hash and print items such that your readout resembles:[0m
+    [1;34m46[0m:   [1;34m# Winter:[0m
+    [1;34m47[0m:   [1;34m#   Christmas: Lights, Wreath[0m
+    [1;34m48[0m:   [1;34m#   New Years: Party Hats[0m
+    [1;34m49[0m:   [1;34m# Summer:[0m
+    [1;34m50[0m:   [1;34m#   Fourth Of July: Fireworks, BBQ[0m
+    [1;34m51[0m:   [1;34m# etc.[0m
+    [1;34m52[0m: 
+    [1;34m53[0m: [32mend[0m
+
